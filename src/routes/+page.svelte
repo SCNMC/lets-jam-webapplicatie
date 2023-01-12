@@ -1,2 +1,8 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script>
+    import Mainhero from "$lib/components/Mainhero.svelte";
+    import Header from "$lib/components/header.svelte";
+</script>
+
+<Header/>
+<Mainhero/>
+
