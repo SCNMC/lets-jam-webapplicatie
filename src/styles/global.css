@@ -16,6 +16,7 @@
 body {
 	background-color:#050542;
 
+	
 }
 
 a {
@@ -28,4 +29,10 @@ li{
 
 html{
 	scroll-behavior: smooth;
+	overflow-x: scroll;
+	scroll-snap-type: y mandatory;
+}
+
+section{
+
 }

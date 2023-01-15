@@ -46,9 +46,23 @@ border-radius: 9px;
 	border-radius: 1em;
  }
 
+ @media (min-width:45rem){
+    header{
+        padding: 3em 2em;
+    }
+    ul{
+        gap: 2em;
+    }
+    li{
+    padding: .6em;
+    border-radius: 2em;
+    width: 7em;
+ }
+
+}
  @media (min-width:60rem){
     header{
-        padding: 2em 4em;
+        padding: 3em 5em;
     }
     ul{
         gap: 2em;
