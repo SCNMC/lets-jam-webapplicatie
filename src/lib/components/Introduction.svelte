@@ -3,9 +3,9 @@
 	<p>SESSIES WAAR GASTSPREKERS</p>
 	<p>UIT DE FRONT END WERELD</p>
 	<p>OVER HUN BEROEP EN</p>
-	<p>ERAVERINGEN KOMEN </p>
+	<p>ERVARINGEN KOMEN </p>
 	<p>VERTELLEN.</p>
-	<a href="">&#8595;</a>
+	<a href=""> <span>&#8595;</span></a>
 </section>
 
 <style>
@@ -52,7 +52,17 @@
 		padding: 0.5rem;
 		border-radius: 7rem;
 		width: 1.5em;
+		animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
 	}
+	@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 25px); }
+    100%   { transform: translate(0, -0px); }   
+}
+
 	@media (min-width: 40rem) {
 		p {
 			font-size: 3em;

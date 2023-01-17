@@ -1,7 +1,7 @@
 <section class="container">
 <section>
 	<img src="/images/weloveweb.jpeg" alt="fdnd" />
-	<h2>FRONTEND DESIGN<br /><span class="space">& </span><span>DEVELOPMENT</span></h2>
+	<h2>FRONTEND DESIGN<br /><span class="space">& </span><span>DEVELOPMENT.</span></h2>
     <slot/>
 </section>
 
@@ -13,7 +13,7 @@
 
 <style>
     .container{
-       min-height: 100vh;
+       min-height: 80vh;
         padding: 3em 1em;
         }
 
@@ -47,7 +47,7 @@
 		background-color: #050542;
 		border-top-right-radius: 15px;
 		margin-top: -3em;
-		padding-right: 0.5em;
+		padding-right: 0.2em;
         line-height: 2em;
 	}
     .space{
@@ -93,6 +93,10 @@ padding-right: 1em;
 		}
 	}
     @media (min-width: 45rem) {
+		.container{
+            padding: .1em 5em;
+			min-height: 90vh;
+        }
         /* section{
             padding: 1em 1em;
         } */
@@ -133,6 +137,7 @@ padding-right: 1em;
 	@media (min-width: 60rem) {
         .container{
             padding: .1em 5em;
+			min-height: 90vh;
         }
 		p {
 			font-size: 2.5em;
@@ -169,7 +174,7 @@ padding-right: 1em;
 		h2 {
 			font-size: 5.5em;
 			margin-top: -3em;
-			line-height: 1.4em;
+			line-height: 1.3em;
 		}
 	}
 </style>

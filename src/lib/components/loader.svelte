@@ -2,7 +2,7 @@
         import { onMount } from "svelte";
 	import { gsap } from "gsap/dist/gsap";
     onMount(() => {
-		gsap.to(".background", 4.5, {
+		gsap.to(".background", 4, {
 			y: "-100%",
 			ease: "Expo.easeInOut",
 			delay: 0,

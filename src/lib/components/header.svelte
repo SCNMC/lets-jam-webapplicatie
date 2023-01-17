@@ -1,5 +1,10 @@
+<script>
+	export let title;
+</script>
+
+
 <header>
-	<h1>fdnd</h1>
+	<h1>{title}</h1>
 	<nav>
 		<ul>
 			<li>Agenda</li>

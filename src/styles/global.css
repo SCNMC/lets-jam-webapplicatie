@@ -32,3 +32,6 @@ html{
 	overflow-x: scroll;
 	scroll-snap-type: y mandatory;
 }
+::selection {
+	background:#66e5bf;
+  }
