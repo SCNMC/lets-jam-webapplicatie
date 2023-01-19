@@ -1,26 +1,96 @@
+<script>
+	import * as prismicH from '@prismicio/helpers';
+
+
+
+</script>
 <section>
-<h2>DECKLAN RECK</h2>
-<a href="">Go to</a>
+	<ul>
+	
+		<li>
+      <p>Shauri</p>
+			<img src="/images/weloveweb.jpeg" />
+			<div>
+				<p>GREENSOCK</p>
+				<p>SEE MORE</p>
+			</div>
+		</li>
+    <!-- <li>
+      <p>SHAURI MAIGUA</p>
+			<img src="/images/weloveweb.jpeg" />
+			<div>
+				<p>RESPONSIVE DESIGN</p>
+				<p>SEE MORE</p>
+			</div>
+		</li>
+    <li>
+      <p>SHAURI MAIGUA</p>
+			<img src="/images/weloveweb.jpeg" />
+			<div>
+				<p>CREATIVE CODING</p>
+				<p>SEE MORE</p>
+			</div>
+		</li>
+    <li>
+      <p>SHAURI MAIGUA</p>
+			<img src="/images/weloveweb.jpeg" />
+			<div>
+				<p>CREATIVE CODING</p>
+				<p>SEE MORE</p>
+			</div>
+		</li>
+	</ul> -->
 </section>
 
 <style>
-  section{
+	section ul {
+display:flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+    gap: 3em;
+		width: 100%;
+	}
+
+  div{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
     flex-direction: row;
-    border-top: 2px solid #a675f5;
-  border-bottom: 2px solid #a675f5;
-  width:100%;
+    justify-content: space-between;
+padding-top: .5em;
   }
-  a{
-    color: #a675f5;
+  div :nth-child(1){
+    font-weight: bold;
+    font-size: 1em;
   }
+	a {
+		color: #a675f5;
+	}
 
-    h2{
-padding: 2em .1em;
-        color: #a675f5;
-   
-    }
+	li {
+		color: #a675f5;
+	}
 
+	img {
+    width: 100%;
+object-fit: cover;
+    padding-top: .5em;
+	}
+
+  @media(min-width:40rem){
+section ul{
+display: grid;
+grid-template-columns: 1fr 1fr;
+
+}
+@media(min-width:60rem){
+section ul{
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 5em;
+}
+ img{
+  height: 30em;
+ }
+}
+  }
 </style>

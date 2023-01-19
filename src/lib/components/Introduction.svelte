@@ -69,6 +69,9 @@
 		}
 	}
 	@media (min-width: 60rem) {
+		section{
+			padding: 3em;
+		}
 		p {
 			font-size: 3.5em;
 		}

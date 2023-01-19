@@ -5,11 +5,16 @@
 	import Introduction from "$lib/components/Introduction.svelte";
 	import Sessions from "$lib/components/Sessions.svelte";
 	import Sessioncard from "$lib/components/Sessioncard.svelte";
+	import SeeMore from "$lib/components/seeMore.svelte";
 	import Interesse from "$lib/components/Interesse.svelte";
 	import Instruction from "$lib/components/instruction.svelte";
 	import Weloveweb from "$lib/components/weloveweb.svelte";
 	import { onMount } from "svelte";
 	import { gsap } from "gsap/dist/gsap";
+	import * as prismicH from '@prismicio/helpers';
+  export let data;
+  const {  document }  = data;
+  console.log(document);
 </script>
 
 <Loader />
@@ -20,4 +25,14 @@
 <Sessions>
 <Sessioncard/>
 </Sessions>
+<SeeMore/>
+{#each data.document as data}
+<li><a href="/{data.uid}">{@html prismicH.asHTML(data.data.sessiontitle)}</a> </li>
+{/each}
+
+  <style>
+a{
+	color: white;
+}
+  </style>
 
