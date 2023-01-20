@@ -23,12 +23,19 @@
 <Mainhero/>
 <Introduction />
 <Sessions>
-<Sessioncard/>
+	{#each data.document as data}
+	
+<Sessioncard
+sessionspeaker={data.data.sessionspeaker}
+sessiontitle={data.data.sessiontitle}
+sessionImg={data.data.image}
+/>
+{/each}
 </Sessions>
 <SeeMore/>
-{#each data.document as data}
-<li><a href="/{data.uid}">{@html prismicH.asHTML(data.data.sessiontitle)}</a> </li>
-{/each}
+<!-- {#each data.document as data}
+<li><a href="/{data.uid}">{@html prismicH.asHTML(data.data.sessionspeaker)}</a> </li>
+{/each} -->
 
   <style>
 a{

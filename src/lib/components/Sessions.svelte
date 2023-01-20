@@ -1,19 +1,24 @@
 <section>
-	<h1> Featured sessions</h1>
-	<p
-		>Ontdek interresante we ♥ web sessions. Wij hebben een ruime variatie van
-		onderwerpen dus er is voor iedereen iets interresants.</p
-	>
-	<slot />
-</section>
+	<h1>Featured sessions</h1>
+	<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum, mollitia doloremque? Ab laudantium rerum, eligendi corporis minus nostrum voluptatem unde fugit commodi, .</p>
+<article>
+		<slot/>
+	</article>
+	</section>
+
 
 <style>
-	section {
+	section{
+	display: grid;
+	align-items: center;
+	padding: 3em 1em;
+	gap: 3em;
+	}
+	article {
 		display: flex;
 		align-items: center;
 		flex-direction: column;
 		gap: 3em;
-		padding: 3em 1em;
 		align-items: flex-start;
 		min-height: 100vh;
 	}
@@ -46,21 +51,25 @@
 	}
 
 	@media (min-width: 40rem) {
-		section {
-			padding: 3em;
+		article {
 			display: grid;
 			align-items: center;
+			grid-template-columns: 1fr 1fr;
 		}
 
 		@media (min-width: 60rem) {
-			section {
-                padding: 5em 5em;
+			section{
+				padding: 6em 5em;
+				gap: 4em;
+			}
+			article {
 				display: grid;
-		justify-content: center;
+				grid-template-columns: 1fr 1fr;
 				gap: 5em;
 			}
+		
 			p {
-				font-size: 3.5em;
+				font-size: 3em;
 			}
 		}
 	}

@@ -1,56 +1,34 @@
 <script>
-	import * as prismicH from '@prismicio/helpers';
-
-
+import * as prismicH from '@prismicio/helpers';
+export let sessionspeaker;
+export let sessiontitle
+export let sessionImg;
 
 </script>
-<section>
+<!-- <section> -->
 	<ul>
-	
+		<a href="#">
 		<li>
-      <p>Shauri</p>
-			<img src="/images/weloveweb.jpeg" />
+      <p>{@html prismicH.asText(sessiontitle)}</p>
+			<img src={prismicH.asImageSrc(sessionImg)} />
 			<div>
-				<p>GREENSOCK</p>
-				<p>SEE MORE</p>
+				<p>{@html prismicH.asHTML(sessionspeaker)}</p>
+				<p>Info</p>
 			</div>
 		</li>
-    <!-- <li>
-      <p>SHAURI MAIGUA</p>
-			<img src="/images/weloveweb.jpeg" />
-			<div>
-				<p>RESPONSIVE DESIGN</p>
-				<p>SEE MORE</p>
-			</div>
-		</li>
-    <li>
-      <p>SHAURI MAIGUA</p>
-			<img src="/images/weloveweb.jpeg" />
-			<div>
-				<p>CREATIVE CODING</p>
-				<p>SEE MORE</p>
-			</div>
-		</li>
-    <li>
-      <p>SHAURI MAIGUA</p>
-			<img src="/images/weloveweb.jpeg" />
-			<div>
-				<p>CREATIVE CODING</p>
-				<p>SEE MORE</p>
-			</div>
-		</li>
-	</ul> -->
-</section>
+	</a>
+		</ul>
+<!-- </section> -->
 
 <style>
-	section ul {
+	/* section ul {
 display:flex;
 justify-content: center;
 align-items: center;
 flex-direction: column;
-    gap: 3em;
+    gap: 10em;
 		width: 100%;
-	}
+	} */
 
   div{
     display: flex;
@@ -59,7 +37,6 @@ flex-direction: column;
 padding-top: .5em;
   }
   div :nth-child(1){
-    font-weight: bold;
     font-size: 1em;
   }
 	a {
@@ -70,26 +47,59 @@ padding-top: .5em;
 		color: #a675f5;
 	}
 
+	li> p{
+		text-align: center;
+		border-radius: 1em;
+		padding: .2em ;
+		width: 100%;
+		color: #050542;
+		background-color: #a675f5;
+	}
+	div > :nth-child(2){
+	text-align: center;
+		border-radius: .7em;
+
+		width: 4em;
+		color: #050542;
+background-color: #66e5bf;
+}
+div  :nth-child(1){
+	text-align: center;
+	background-color: #a675f5;
+	color: #050542;
+	border-radius: .7em;
+width: 8em;
+}
+
 	img {
     width: 100%;
 object-fit: cover;
-    padding-top: .5em;
+    padding-top: 1em;
 	}
 
   @media(min-width:40rem){
 section ul{
-display: grid;
-grid-template-columns: 1fr 1fr;
+/* display: grid;
+grid-template-columns: 1fr 1fr ; */
+}
 
+@media(min-width:70rem){
+
+section ul {
+/* display: grid;
+grid-template-columns: 1fr 1fr ; */
+/* gap: 5em; */
 }
-@media(min-width:60rem){
-section ul{
-display: grid;
-grid-template-columns: 1fr 1fr;
-gap: 5em;
-}
+li > p{
+		text-align: center;
+		border-radius: 1em;
+		padding: .1em ;
+		width: 50%;
+		color: #050542;
+		background-color: #a675f5;
+	}
  img{
-  height: 30em;
+  height: 25em;
  }
 }
   }
