@@ -3,14 +3,17 @@ import * as prismicH from '@prismicio/helpers';
 export let sessionspeaker;
 export let sessiontitle
 export let sessionImg;
+export let dataUid;
+
+	
 
 </script>
 <!-- <section> -->
 	<ul>
-		<a href="#">
+		<a href="{dataUid}">
 		<li>
-      <p>{@html prismicH.asText(sessiontitle)}</p>
-			<img src={prismicH.asImageSrc(sessionImg)} />
+      <p>{@html prismicH.asHTML(sessiontitle)}</p>
+			<img src={prismicH.asImageSrc(sessionImg)} alt="#" />
 			<div>
 				<p>{@html prismicH.asHTML(sessionspeaker)}</p>
 				<p>Info</p>
@@ -94,7 +97,7 @@ li > p{
 		text-align: center;
 		border-radius: 1em;
 		padding: .1em ;
-		width: 50%;
+		width: 70%;
 		color: #050542;
 		background-color: #a675f5;
 	}

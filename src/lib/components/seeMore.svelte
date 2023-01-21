@@ -2,7 +2,7 @@
     <p>Interesse?<br>Kijk dan op onze agenda</p>
     <div>
         <p>	&rarr;</p>
-    <a href> Ga naar de pagina</a>
+    <a href="#"> Ga naar de pagina</a>
 </div>
 </section>
 

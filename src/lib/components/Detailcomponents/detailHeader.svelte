@@ -4,35 +4,41 @@
 
 
 <header>
-	<h1>{title}</h1>
+	<a href="/"><h1>Ga terug</h1></a>
 	<nav>
 		<ul>
-			<li>Agenda</li>
-			<li>Meld je aan</li>
+			<!-- <li>Agenda</li>
+			<li>Meld je aan</li> -->
 		</ul>
 	</nav>
 </header>
 
 <style>
-	h1 {
-		font-size: 2.5em;
+    header{
+        display: flex;
+        align-items: center;
+    padding-left: 3em;
+color:#050542 ;
+    }
+    
+	/* h1 {
+		font-size:1em;
 		color: #66e5bf;
 		background: #050542;
-		box-shadow: -4px 4px 0px #66e5bf;
-		border: solid 3px #66e5bf;
+		box-shadow: -4px 4px 0px #050542;
+		border: solid 3px #050542;
 		border-radius: 9px;
-		background: var(--color);
+
 	}
 	header {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		padding: 3em 1em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+gap: 5em;
 	}
 
 	ul {
-		display: flex;
-		flex-direction: row;
+	
 		gap: 1em;
 	}
 
@@ -53,7 +59,7 @@
 
 	@media (min-width: 45rem) {
 		header {
-			padding: 3em 2em;
+		
 		}
 		ul {
 			gap: 2em;
@@ -66,7 +72,7 @@
 	}
 	@media (min-width: 60rem) {
 		header {
-			padding: 3em 5em;
+
 		}
 		ul {
 			gap: 2em;
@@ -76,5 +82,5 @@
 			border-radius: 2em;
 			width: 7em;
 		}
-	}
+	} */
 </style>

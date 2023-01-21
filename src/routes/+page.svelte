@@ -11,35 +11,33 @@
 	import Weloveweb from "$lib/components/weloveweb.svelte";
 	import { onMount } from "svelte";
 	import { gsap } from "gsap/dist/gsap";
-	import * as prismicH from '@prismicio/helpers';
-  export let data;
-  const {  document }  = data;
-  console.log(document);
+	import * as prismicH from "@prismicio/helpers";
+	export let data;
+	const { document } = data;
+	console.log(document);
 </script>
 
 <Loader />
-<Header title="fdnd"
-/>
-<Mainhero/>
+<Header title="fdnd" />
+<Mainhero />
 <Introduction />
 <Sessions>
 	{#each data.document as data}
-	
-<Sessioncard
-sessionspeaker={data.data.sessionspeaker}
-sessiontitle={data.data.sessiontitle}
-sessionImg={data.data.image}
-/>
-{/each}
+		<Sessioncard
+			sessionspeaker={data.data.sessionspeaker}
+			sessiontitle={data.data.sessiontitle}
+			sessionImg={data.data.image}
+			dataUid={data.uid}
+		/>
+	{/each}
 </Sessions>
-<SeeMore/>
+<SeeMore />
+
 <!-- {#each data.document as data}
 <li><a href="/{data.uid}">{@html prismicH.asHTML(data.data.sessionspeaker)}</a> </li>
 {/each} -->
-
-  <style>
-a{
-	color: white;
-}
-  </style>
-
+<style>
+	a {
+		color: white;
+	}
+</style>

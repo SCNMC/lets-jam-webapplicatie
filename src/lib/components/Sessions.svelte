@@ -20,7 +20,6 @@
 		flex-direction: column;
 		gap: 3em;
 		align-items: flex-start;
-		min-height: 100vh;
 	}
 	h1 {
 		font-size: 2em;
@@ -50,14 +49,17 @@
 		font-size: 2em;
 	}
 
-	@media (min-width: 40rem) {
+	@media (min-width: 50rem) {
 		article {
 			display: grid;
 			align-items: center;
 			grid-template-columns: 1fr 1fr;
 		}
+		img{
+			width: 100%;
+		}
 
-		@media (min-width: 60rem) {
+		@media (min-width: 70rem) {
 			section{
 				padding: 6em 5em;
 				gap: 4em;
@@ -73,4 +75,5 @@
 			}
 		}
 	}
+	
 </style>
