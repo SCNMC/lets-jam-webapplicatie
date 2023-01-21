@@ -55,13 +55,13 @@ padding-top: .5em;
 		border-radius: 1em;
 		padding: .2em ;
 		width: 100%;
+		font-size: .7em;
 		color: #050542;
 		background-color: #a675f5;
 	}
 	div > :nth-child(2){
 	text-align: center;
 		border-radius: .7em;
-
 		width: 4em;
 		color: #050542;
 background-color: #66e5bf;
@@ -94,6 +94,7 @@ grid-template-columns: 1fr 1fr ; */
 /* gap: 5em; */
 }
 li > p{
+	font-size: .9em;
 		text-align: center;
 		border-radius: 1em;
 		padding: .1em ;
