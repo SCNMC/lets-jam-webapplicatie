@@ -1,7 +1,8 @@
 <script>
 	import "../styles/global.css";
-	import Loader from "$lib/components/loader.svelte";
+import Header from "$lib/components/header.svelte";
 </script>
+
 
 <slot />
 

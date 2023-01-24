@@ -1,18 +1,21 @@
-<section>
+<section id="featured-session">
 	<h1>Featured sessions</h1>
-	<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum, mollitia doloremque? Ab laudantium rerum, eligendi corporis minus nostrum voluptatem unde fugit commodi, .</p>
-<article>
-		<slot/>
+	<p
+		>Ontdek we love web sessions die op locatie worden gegeven. Voor meer
+		informatie klik je op de desbetreffende we love web sessie. Voor een
+		overzicht van alle sessies ga je naar de agenda pagina.</p
+	>
+	<article>
+		<slot />
 	</article>
-	</section>
-
+</section>
 
 <style>
-	section{
-	display: grid;
-	align-items: center;
-	padding: 3em 1em;
-	gap: 3em;
+	section {
+		display: grid;
+		align-items: center;
+		padding: 3em 1em;
+		gap: 3em;
 	}
 	article {
 		display: flex;
@@ -55,12 +58,12 @@
 			align-items: center;
 			grid-template-columns: 1fr 1fr;
 		}
-		img{
+		img {
 			width: 100%;
 		}
 
 		@media (min-width: 70rem) {
-			section{
+			section {
 				padding: 6em 5em;
 				gap: 4em;
 			}
@@ -69,11 +72,10 @@
 				grid-template-columns: 1fr 1fr;
 				gap: 5em;
 			}
-		
+
 			p {
-				font-size: 3em;
+				font-size: 2.5em;
 			}
 		}
 	}
-	
 </style>

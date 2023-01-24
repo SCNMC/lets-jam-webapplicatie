@@ -33,11 +33,3 @@
 </Sessions>
 <SeeMore />
 
-<!-- {#each data.document as data}
-<li><a href="/{data.uid}">{@html prismicH.asHTML(data.data.sessionspeaker)}</a> </li>
-{/each} -->
-<style>
-	a {
-		color: white;
-	}
-</style>
