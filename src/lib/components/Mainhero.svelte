@@ -1,3 +1,21 @@
+<script>
+	import { onMount } from "svelte";
+	import { gsap } from "gsap/dist/gsap";
+	onMount(() => {
+        gsap.from(
+        "header, .weloveweb ",
+        2,
+        {
+          y: "200",
+          opacity: 0,
+          ease: "Expo.easeInOut",
+          delay: 2.5,
+          stagger: 0.08,
+		});
+	});
+	
+</script>
+
 <section class="container">
 <section>
 	<img src="/images/weloveweb.jpeg" alt="fdnd" />
@@ -5,7 +23,7 @@
     <slot/>
 </section>
 
-<div>
+<div class="weloveweb">
 	<p>WE</p><span>♥</span><p>THE</p>
 	<p> WEB </p>
 </div>

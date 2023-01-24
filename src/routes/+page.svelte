@@ -3,7 +3,7 @@
 	import Header from "$lib/components/header.svelte";
 	import Loader from "$lib/components/loader.svelte";
 	import Introduction from "$lib/components/Introduction.svelte";
-	import Sessions from "$lib/components/Sessions.svelte";
+	import SessionSection from "$lib/components/SessionSection.svelte";
 	import Sessioncard from "$lib/components/Sessioncard.svelte";
 	import SeeMore from "$lib/components/seeMore.svelte";
 	import Interesse from "$lib/components/Interesse.svelte";
@@ -21,7 +21,7 @@
 <Header title="fdnd" />
 <Mainhero />
 <Introduction />
-<Sessions>
+<SessionSection>
 	{#each data.document as data}
 		<Sessioncard
 			sessionspeaker={data.data.sessionspeaker}
@@ -30,6 +30,6 @@
 			dataUid={data.uid}
 		/>
 	{/each}
-</Sessions>
+</SessionSection>
 <SeeMore />
 
