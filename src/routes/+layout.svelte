@@ -1,8 +1,14 @@
 <script>
 	import "../styles/global.css";
-import Header from "$lib/components/header.svelte";
+ import PageTransition from "$lib/components/PageTransition.svelte";
+
 </script>
 
 
-<slot />
+<PageTransition>
+    <slot />
+</PageTransition>
+ 
+	
+
 

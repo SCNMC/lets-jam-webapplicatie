@@ -41,8 +41,8 @@
 		article {
 			display: flex;
 			justify-content: center;
-			align-items: center;
-			flex-direction: row;
+			align-items: flex-start;
+			flex-direction: column;
 			gap: 5em;
 			padding: 0.1em 5em;
 
@@ -76,4 +76,15 @@
 			padding: 1em;
 		}
 	}
+    @media (min-width: 90rem){
+        article{
+            flex-direction: row;
+            align-items: center;
+        }
+
+    }
+
+    
+    
+
 </style>

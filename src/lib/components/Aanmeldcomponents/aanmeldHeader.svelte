@@ -4,7 +4,8 @@
 
 
 <header>
-	<h1>{title}</h1>
+	<a href="/">
+	<h1>{title}</h1></a>
 	<nav>
 		<ul>
 			<li>Homepagina</li>

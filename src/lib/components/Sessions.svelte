@@ -1,4 +1,4 @@
-<section >
+<section id="featured-session">
 	<h1>Featured sessions</h1>
 	<p
 		>Ontdek we love web sessions die op locatie worden gegeven. Voor meer
@@ -51,6 +51,7 @@
 		color: #a675f5;
 		font-size: 2em;
 	}
+
 	@media (min-width: 50rem) {
 		article {
 			display: grid;
@@ -60,6 +61,7 @@
 		img {
 			width: 100%;
 		}
+
 		@media (min-width: 70rem) {
 			section {
 				padding: 6em 5em;
@@ -70,6 +72,7 @@
 				grid-template-columns: 1fr 1fr;
 				gap: 5em;
 			}
+
 			p {
 				font-size: 2.5em;
 			}

@@ -6,6 +6,7 @@
 	import SessionSection from "$lib/components/SessionSection.svelte";
 	import Sessioncard from "$lib/components/Sessioncard.svelte";
 	import SeeMore from "$lib/components/seeMore.svelte";
+	import PageTransition from "$lib/components/PageTransition.svelte";
 	import Interesse from "$lib/components/Interesse.svelte";
 	import Instruction from "$lib/components/instruction.svelte";
 	import Weloveweb from "$lib/components/weloveweb.svelte";
@@ -18,6 +19,7 @@
 </script>
 
 <Loader />
+<PageTransition>
 <Header title="fdnd" />
 <Mainhero />
 <Introduction />
@@ -32,4 +34,5 @@
 	{/each}
 </SessionSection>
 <SeeMore />
+</PageTransition>
 
