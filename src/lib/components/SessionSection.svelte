@@ -1,8 +1,8 @@
 <section >
 	<h1>Featured sessions</h1>
 	<p
-		>Ontdek we love web sessions die op locatie worden gegeven. Voor meer
-		informatie klik je op de desbetreffende we love web sessie. Voor een
+		>Ontdek we love web sessions die op locatie worden gegeven.<br> Voor meer
+		informatie klik je op de desbetreffende we love web sessie. <br>Voor een
 		overzicht van alle sessies ga je naar de agenda pagina.</p
 	>
 	<article>
@@ -49,7 +49,7 @@
 	} */
 	p {
 		color: #a675f5;
-		font-size: 2em;
+		font-size: 1.5em;
 	}
 	@media (min-width: 50rem) {
 		article {
@@ -71,7 +71,7 @@
 				gap: 5em;
 			}
 			p {
-				font-size: 2.5em;
+				font-size: 2em;
 			}
 		}
 	}

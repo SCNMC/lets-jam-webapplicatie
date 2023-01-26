@@ -73,7 +73,7 @@
 		img {
 			max-width: 100%;
 			height: 35em;
-			padding: 1em;
+
 		}
 	}
     @media (min-width: 90rem){

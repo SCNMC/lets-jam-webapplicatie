@@ -22,7 +22,8 @@
 
 	@media(min-width:70rem){
 		header{
-			padding-left: 6em;
+			padding-left: 5em;
+
 		}
 
 	}

@@ -5,9 +5,9 @@
 </script>
 
 
-<PageTransition>
+
     <slot />
-</PageTransition>
+
  
 	
 

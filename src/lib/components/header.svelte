@@ -53,7 +53,7 @@
 
 	@media (min-width: 45rem) {
 		header {
-			padding: 3em 2em;
+			padding: 3em 5em;
 		}
 		ul {
 			gap: 2em;
@@ -75,6 +75,15 @@
 			padding: 0.6em;
 			border-radius: 2em;
 			width: 7em;
+		}
+	}
+	@media (min-width: 106rem) {
+		h1{
+			font-size: 6em;
+			padding: .1em;
+		}
+		li{
+			font-size: 2em;
 		}
 	}
 </style>

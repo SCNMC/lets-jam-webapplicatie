@@ -123,7 +123,7 @@ padding-right: 1em;
 			height: 100%;
 		}
         h2{
-            font-size:4em;
+            font-size:3em;
             line-height: 1.5em;
         }
         p {
@@ -195,5 +195,36 @@ padding-right: 1em;
 			margin-top: -3em;
 			line-height: 1.3em;
 		}
+	}
+	@media (min-width: 106rem) {
+		div :nth-child(1) {
+			font-size: 4.5em;
+			padding: 0.6em;
+		}
+		div :nth-child(2) {
+			font-size: 8.5rem;
+			border-radius: 6rem;
+			width: 12.5rem;
+		}
+		div :nth-child(3) {
+			font-size: 4.5em;
+			padding: .7em;
+			border-radius: 8rem;
+		}
+		div :nth-child(4) {
+			font-size: 4.5em;
+			padding: 0.4em;
+			width: 30rem;
+			border-radius: 4em;
+		}
+		h2{
+			font-size: 10em;
+			margin-top: -2em;
+		}
+		img{
+			max-height: 70em;
+
+		}
+
 	}
 </style>
