@@ -15,6 +15,7 @@
 		detailSpeaker={data.sessionspeaker}
 		detailTitle={data.sessiontitle}
 		detailShortdescription={data.description}
+		detailImage={data.image}
 	/>
 	<DetailIntroduction/>
 

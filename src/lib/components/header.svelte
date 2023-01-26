@@ -2,7 +2,6 @@
 	export let title;
 </script>
 
-
 <header>
 	<h1>{title}</h1>
 	<nav>
@@ -78,11 +77,11 @@
 		}
 	}
 	@media (min-width: 106rem) {
-		h1{
+		h1 {
 			font-size: 6em;
-			padding: .1em;
+			padding: 0.1em;
 		}
-		li{
+		li {
 			font-size: 2em;
 		}
 	}

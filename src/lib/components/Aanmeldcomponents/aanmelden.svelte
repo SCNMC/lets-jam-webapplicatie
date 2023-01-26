@@ -62,9 +62,6 @@
     flex-direction: column;
     justify-content: start;
     gap: 1em;
-
-
-
     border: none;
     color: white;
     background-color: #050542;

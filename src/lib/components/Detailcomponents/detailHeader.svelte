@@ -15,16 +15,14 @@
 <style>
 	header {
 		display: flex;
-        align-items: center;
-		padding: 2em 3em;
+		align-items: center;
+		padding: 3em;
 		color: white;
 	}
 
-	@media(min-width:70rem){
-		header{
-			padding-left: 5em;
-
+	@media (min-width: 70rem) {
+		header {
+			padding: 1em 5em;
 		}
-
 	}
 </style>

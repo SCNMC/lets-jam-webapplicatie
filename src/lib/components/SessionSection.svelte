@@ -1,8 +1,8 @@
-<section >
+<section>
 	<h1>Featured sessions</h1>
 	<p
-		>Ontdek we love web sessions die op locatie worden gegeven.<br> Voor meer
-		informatie klik je op de desbetreffende we love web sessie. <br>Voor een
+		>Ontdek we love web sessions die op locatie worden gegeven.<br /> Voor meer
+		informatie klik je op de desbetreffende we love web sessie. <br />Voor een
 		overzicht van alle sessies ga je naar de agenda pagina.</p
 	>
 	<article>

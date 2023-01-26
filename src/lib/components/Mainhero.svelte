@@ -2,77 +2,62 @@
 	import { onMount } from "svelte";
 	import { gsap } from "gsap/dist/gsap";
 	onMount(() => {
-        gsap.from(
-        "header, .weloveweb ",
-        2,
-        {
-          y: "200",
-          opacity: 0,
-          ease: "Expo.easeInOut",
-          delay: 2.5,
-          stagger: 0.08,
+		gsap.from("header, .weloveweb ", 2, {
+			y: "200",
+			opacity: 0,
+			ease: "Expo.easeInOut",
+			delay: 2.5,
+			stagger: 0.08,
 		});
 	});
-	
 </script>
 
 <section class="container">
-<section>
-	<img src="/images/weloveweb.jpeg" alt="fdnd" />
-	<h2>FRONTEND DESIGN<br /><span class="space">& </span><span>DEVELOPMENT.</span></h2>
-    <slot/>
-</section>
+	<section>
+		<img src="/images/weloveweb.jpeg" alt="fdnd" />
+		<h2
+			>FRONTEND DESIGN<br /><span class="space">& </span><span
+				>DEVELOPMENT.</span
+			></h2
+		>
+		<slot />
+	</section>
 
-<div class="weloveweb">
-	<p>WE</p><span>♥</span><p>THE</p>
-	<p> WEB </p>
-</div>
+	<div class="weloveweb">
+		<p>WE</p><span>♥</span><p>THE</p>
+		<p> WEB </p>
+	</div>
 </section>
 
 <style>
+	.container {
+		min-height: 80vh;
+		padding: 3em 1em;
+	}
 
-    .container{
-       min-height: 80vh;
-        padding: 3em 1em;
-        }
-
-        section{
-            display: flex;
-            flex-direction: column;
-            gap: 3em;
-        }
-    
-	/* section {
+	section {
 		display: flex;
 		flex-direction: column;
-		color: white;
-		padding: 3em 1em;
-		gap: 2em;
-		line-height: 3.5em;
-        min-height: 100vh;
-	} */
-	/* h2{
-        font-size: 2.5em;
-        font-weight: bold;
-    } */
+		gap: 3em;
+	}
+
 	img {
-	height: 100%;
-        border-radius: .5em;
+		height: 100%;
+		border-radius: 0.5em;
 	}
 	h2 {
 		width: fit-content;
 		font-size: 2em;
-        color: white;
+		color: white;
 		background-color: #050542;
 		border-top-right-radius: 15px;
 		margin-top: -3em;
 		padding-right: 0.2em;
-        line-height: 2em;
+		line-height: 2em;
 	}
-    .space{
-padding-right: 1em;
-    }
-
+	.space {
+		padding-right: 1em;
+	}
 
 	div {
 		display: flex;
@@ -111,25 +96,25 @@ padding-right: 1em;
 			height: 100%;
 		}
 	}
-    @media (min-width: 45rem) {
-		.container{
-            padding: .1em 5em;
+	@media (min-width: 45rem) {
+		.container {
+			padding: 0.1em 5em;
 			min-height: 90vh;
-        }
-        /* section{
+		}
+		/* section{
             padding: 1em 1em;
         } */
 		img {
 			height: 100%;
 		}
-        h2{
-            font-size:3em;
-            line-height: 1.5em;
-        }
-        p {
+		h2 {
+			font-size: 3em;
+			line-height: 1.5em;
+		}
+		p {
 			font-size: 2.5em;
 		}
-        div {
+		div {
 			justify-content: start;
 			gap: 2em;
 		}
@@ -154,15 +139,15 @@ padding-right: 1em;
 	}
 
 	@media (min-width: 60rem) {
-        .container{
-            padding: .1em 5em;
+		.container {
+			padding: 0.1em 5em;
 			min-height: 90vh;
-        }
+		}
 		p {
 			font-size: 2.5em;
 		}
 		img {
-			max-height:35rem;
+			max-height: 35rem;
 			object-fit: cover;
 		}
 		/* section {
@@ -208,7 +193,7 @@ padding-right: 1em;
 		}
 		div :nth-child(3) {
 			font-size: 4.5em;
-			padding: .7em;
+			padding: 0.7em;
 			border-radius: 8rem;
 		}
 		div :nth-child(4) {
@@ -217,14 +202,12 @@ padding-right: 1em;
 			width: 30rem;
 			border-radius: 4em;
 		}
-		h2{
+		h2 {
 			font-size: 10em;
 			margin-top: -2em;
 		}
-		img{
+		img {
 			max-height: 70em;
-
 		}
-
 	}
 </style>

@@ -2,10 +2,8 @@
 	export let title;
 </script>
 
-
 <header>
-	<a href="/">
-	<h1>{title}</h1></a>
+	<a href="/"> <h1>{title}</h1></a>
 	<nav>
 		<ul>
 			<li>Homepagina</li>
@@ -22,14 +20,13 @@
 		box-shadow: -4px 4px 0px #a675f5;
 		border: solid 3px #a675f5;
 		border-radius: 9px;
-        padding: .1em;
+		padding: 0.1em;
 	}
 	header {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
 		padding: 3em 1em;
-    
 	}
 
 	ul {
@@ -41,7 +38,7 @@
 	li {
 		text-align: center;
 		background-color: #050542;
-        border:  solid 2px #a675f5;
+		border: solid 2px #a675f5;
 		color: white;
 		padding: 0.5em;
 		border-radius: 1em;

@@ -53,15 +53,21 @@
 		border-radius: 7rem;
 		width: 1.5em;
 		animation-name: floating;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
+		animation-duration: 3s;
+		animation-iteration-count: infinite;
+		animation-timing-function: ease-in-out;
 	}
 	@keyframes floating {
-    0% { transform: translate(0,  0px); }
-    50%  { transform: translate(0, 25px); }
-    100%   { transform: translate(0, -0px); }   
-}
+		0% {
+			transform: translate(0, 0px);
+		}
+		50% {
+			transform: translate(0, 25px);
+		}
+		100% {
+			transform: translate(0, -0px);
+		}
+	}
 
 	@media (min-width: 40rem) {
 		p {
@@ -69,7 +75,7 @@
 		}
 	}
 	@media (min-width: 60rem) {
-		section{
+		section {
 			padding: 3em;
 		}
 		p {

@@ -2,11 +2,12 @@
 	export let detailSpeaker;
 	export let detailTitle;
 	export let detailShortdescription;
+	export let detailImage;
 	import * as prismicH from "@prismicio/helpers";
 </script>
 
 <article>
-	<img src="/images/weloveweb.jpeg" alt="weloveweb" />
+	<img src={prismicH.asImageSrc(detailImage)} alt="#" />
 	<div>
 		<p>{@html prismicH.asHTML(detailSpeaker)}</p>
 		<h1>{@html prismicH.asHTML(detailTitle)}</h1>
@@ -35,7 +36,7 @@
 	@media (min-width: 70rem) {
 		h1 {
 			color: white;
-			font-size: 2.5em;
+			font-size: 2em;
 		}
 
 		article {
@@ -72,19 +73,13 @@
 		}
 		img {
 			max-width: 100%;
-			height: 35em;
-
+			height: 30em;
 		}
 	}
-    @media (min-width: 90rem){
-        article{
-            flex-direction: row;
-            align-items: center;
-        }
-
-    }
-
-    
-    
-
+	@media (min-width: 90rem) {
+		article {
+			flex-direction: row;
+			align-items: center;
+		}
+	}
 </style>
