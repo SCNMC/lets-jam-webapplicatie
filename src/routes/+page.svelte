@@ -7,9 +7,6 @@
 	import Sessioncard from "$lib/components/Sessioncard.svelte";
 	import SeeMore from "$lib/components/seeMore.svelte";
 	import PageTransition from "$lib/components/PageTransition.svelte";
-	import Interesse from "$lib/components/Interesse.svelte";
-	import Instruction from "$lib/components/instruction.svelte";
-	import Weloveweb from "$lib/components/weloveweb.svelte";
 	import { onMount } from "svelte";
 	import { gsap } from "gsap/dist/gsap";
 	import * as prismicH from "@prismicio/helpers";

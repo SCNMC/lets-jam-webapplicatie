@@ -181,7 +181,7 @@
 			line-height: 1.3em;
 		}
 	}
-	@media (min-width: 106rem) {
+	/* @media (min-width: 106rem) {
 		div :nth-child(1) {
 			font-size: 4.5em;
 			padding: 0.6em;
@@ -209,5 +209,5 @@
 		img {
 			max-height: 70em;
 		}
-	}
+	} */
 </style>

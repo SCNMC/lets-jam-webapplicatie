@@ -76,7 +76,7 @@
 			width: 7em;
 		}
 	}
-	@media (min-width: 106rem) {
+	/* @media (min-width: 106rem) {
 		h1 {
 			font-size: 6em;
 			padding: 0.1em;
@@ -84,5 +84,5 @@
 		li {
 			font-size: 2em;
 		}
-	}
+	} */
 </style>
