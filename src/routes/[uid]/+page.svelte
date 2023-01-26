@@ -8,18 +8,20 @@
 	console.log(data);
 	const { document } = data;
 </script>
-<PageTransition>
-<DetailSection>
-	<DetailHeader title="fdnd" />
-	<DetailHero
-		detailSpeaker={data.sessionspeaker}
-		detailTitle={data.sessiontitle}
-		detailShortdescription={data.description}
-		detailImage={data.image}
-	/>
-	<DetailIntroduction/>
 
-</DetailSection>
+<PageTransition>
+	<DetailSection>
+		<DetailHeader title="fdnd" />
+		<DetailHero
+			detailSpeaker={data.sessionspeaker}
+			detailTitle={data.sessiontitle}
+			detailShortdescription={data.description}
+			detailImage={data.image}
+		/>
+		<DetailIntroduction />
+	</DetailSection>
 </PageTransition>
+
+
 
 

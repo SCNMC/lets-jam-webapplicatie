@@ -12,3 +12,9 @@ export async function load({ fetch, request }) {
 
 	error(404, 'Not found');
 }
+
+
+
+
+
+
