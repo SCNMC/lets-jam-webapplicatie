@@ -7,7 +7,7 @@ Dit is een herdesign op de We love web Pub website.
 
 
 
-[Wiki](https://github.com/SCNMC/lose-your-head-the-client-case/wiki)
+[Wiki]()
 ## Kenmerken
 
 * SvelteKit
